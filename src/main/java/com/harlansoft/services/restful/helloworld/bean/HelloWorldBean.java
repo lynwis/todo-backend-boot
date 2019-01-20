@@ -1,18 +1,14 @@
-package com.harlansoft.todoservices.bean;
+package com.harlansoft.services.restful.helloworld.bean;
+
+import lombok.Getter;
+import lombok.Setter;
 
 public class HelloWorldBean {
 
+	@Getter @Setter
 	private String message;
 
 	public HelloWorldBean(String message) {
-		this.message = message;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
 		this.message = message;
 	}
 
