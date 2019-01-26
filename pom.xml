@@ -28,6 +28,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<!-- by default, Spring security adds Form-based authentication to every endpoint -->
+<!-- that means that the first time and endpoint is accessed, a login form (via browser) or login popup
+	will be presented. The default username is "user", the password is generated at boot and printed.
+	Once logged in, the login is kept alive in the server session and in a session cookie in the client, which is
+	sent every time with each request -->
+<!-- 	basic authentication is also enabled by default: user & pass is provided on each request in the basic authorization header -->
+<!-- with basic authentication, you don't need an active session -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 <!-- 		monitoring -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
