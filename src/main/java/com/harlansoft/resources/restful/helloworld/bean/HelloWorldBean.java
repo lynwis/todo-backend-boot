@@ -1,4 +1,4 @@
-package com.harlansoft.services.restful.helloworld.bean;
+package com.harlansoft.resources.restful.helloworld.bean;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.harlansoft.services.restful.todo;
+package com.harlansoft.resources.restful.todo;
 
 import java.net.URI;
 import java.util.List;
@@ -16,7 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.harlansoft.services.restful.todo.bean.Todo;
+import com.harlansoft.model.todo.Todo;
+import com.harlansoft.services.todo.TodoHardCodedService;
 
 @RestController
 @CrossOrigin(origins="http://localhost:4200")

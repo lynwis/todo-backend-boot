@@ -1,4 +1,4 @@
-package com.harlansoft.services.restful;
+package com.harlansoft;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,6 +13,8 @@ import org.springframework.context.ApplicationContext;
 	// it enables component scan: classes in packages are scanned looking for Spring annotations
 	// for example, classes annotated with "RestController" will be registered as spring components,
 	// and his lifecycle will be managed by the spring framework
+	// NB thi is only valid for classes in SUBPACKAGES of the current package!
+	// annotated classes in other sub-trees will not be detected!
 
 @SpringBootApplication
 public class TodoServicesApplication {

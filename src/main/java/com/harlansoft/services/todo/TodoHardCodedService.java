@@ -1,4 +1,4 @@
-package com.harlansoft.services.restful.todo;
+package com.harlansoft.services.todo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.harlansoft.services.restful.todo.bean.Todo;
+import com.harlansoft.model.todo.Todo;
 
 @Service
 public class TodoHardCodedService {

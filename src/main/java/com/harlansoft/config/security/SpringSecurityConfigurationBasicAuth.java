@@ -1,4 +1,4 @@
-package com.harlansoft.services.restful.security.basic.auth;
+package com.harlansoft.config.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
