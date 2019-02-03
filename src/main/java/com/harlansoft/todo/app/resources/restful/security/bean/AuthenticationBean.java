@@ -1,4 +1,4 @@
-package com.harlansoft.resources.restful.security.bean;
+package com.harlansoft.todo.app.resources.restful.security.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

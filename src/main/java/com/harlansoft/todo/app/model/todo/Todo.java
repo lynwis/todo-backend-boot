@@ -1,4 +1,4 @@
-package com.harlansoft.model.todo;
+package com.harlansoft.todo.app.model.todo;
 
 import java.util.Date;
 

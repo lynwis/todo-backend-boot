@@ -1,4 +1,4 @@
-package com.harlansoft;
+package com.harlansoft.todo.app;
 
 import java.util.Arrays;
 import java.util.List;
@@ -32,10 +32,10 @@ public class TodoServicesApplication {
 //		it will find, for example, the spring MVC jar, so it will start to configure a dispatcher servlet, view resolver...
 //		see springboottutorial.com
 		
-		List<String> names = Arrays.asList(context.getBeanDefinitionNames());
-		names.stream()
-			.map(String::toString)
-			.forEach(System.out::println);
+//		List<String> names = Arrays.asList(context.getBeanDefinitionNames());
+//		names.stream()
+//			.map(String::toString)
+//			.forEach(System.out::println);
 	}
 
 }

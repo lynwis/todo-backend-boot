@@ -1,10 +1,15 @@
-package com.harlansoft.config.security;
+package com.harlansoft.todo.basic.auth.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+//
+// NB when this file is moved in a different package tree than the
+// SpringBoot application, it is not scanned and is actually DISABLED
+//
 
 @Configuration			// tells Spring that this file contains configuration
 @EnableWebSecurity		// tells Spring that this files concerns web security policies

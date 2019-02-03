@@ -1,4 +1,4 @@
-package com.harlansoft.services.todo;
+package com.harlansoft.todo.app.services.todo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.harlansoft.model.todo.Todo;
+import com.harlansoft.todo.app.model.todo.Todo;
 
 @Service
 public class TodoHardCodedService {
