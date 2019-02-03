@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.harlansoft.todo.app.security.jwt.JwtTokenUtil;
-import com.harlansoft.todo.app.security.jwt.JwtUserDetails;
 
 @RestController
 @CrossOrigin(origins="http://localhost:4200")
@@ -58,7 +57,8 @@ public class JwtAuthenticationRestController {
     String authToken = request.getHeader(tokenHeader);
     final String token = authToken.substring(7);
     String username = jwtTokenUtil.getUsernameFromToken(token);
-    JwtUserDetails user = (JwtUserDetails) jwtInMemoryUserDetailsService.loadUserByUsername(username);
+//    JwtUserDetails user = (JwtUserDetails) 
+    		jwtInMemoryUserDetailsService.loadUserByUsername(username);
 
     if (jwtTokenUtil.canTokenBeRefreshed(token)) {
       String refreshedToken = jwtTokenUtil.refreshToken(token);

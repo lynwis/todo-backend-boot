@@ -1,11 +1,7 @@
 package com.harlansoft.todo.app;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 
 // this annotation says that
 	// this class is a Spring Context file
@@ -24,7 +20,8 @@ public class TodoServicesApplication {
 		// it is used to run an Application contex
 		// it takes an application context as input - in this case, this annotated class
 		// this method returns the ApplicationContext back
-		ApplicationContext context = SpringApplication.run(TodoServicesApplication.class, args);
+//		ApplicationContext context = 
+				SpringApplication.run(TodoServicesApplication.class, args);
 		
 //		these beans are configured via Spring Boot auto configuration
 //		at startup, the spring boot fw will trigger the autoconfigure JAR
