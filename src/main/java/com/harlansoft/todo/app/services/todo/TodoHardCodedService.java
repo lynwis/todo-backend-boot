@@ -11,7 +11,7 @@ import com.harlansoft.todo.app.model.todo.Todo;
 @Service
 public class TodoHardCodedService {
 	
-	private static int idCounter;
+	private static long idCounter;
 	private static final List<Todo> todos;
 	static {
 		idCounter = 0;
