@@ -68,15 +68,16 @@ public class TodoJPAResource {
 	}
 	
 //	Create new Todo item
-	@PostMapping("/jpa/users/{username}/todos/")
+	@PostMapping("/jpa/users/{username}/todos")
 	public ResponseEntity<Todo> addTodo(@PathVariable String username,
 			@RequestBody Todo todo) {
 		
+		todo.setUsername(username);
 		Todo createdTodo = todoJpaRepository.save(todo);
 		
 //		we're returning back the URL of the newly created resource
 //		/users/{username}/todos/<new-id>
-		URI uri =ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 			.buildAndExpand(createdTodo.getId()).toUri();
 		
 //		we return back a response with NO BODY and the CREATED HTTP status
