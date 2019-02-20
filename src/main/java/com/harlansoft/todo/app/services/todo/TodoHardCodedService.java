@@ -31,7 +31,7 @@ public class TodoHardCodedService {
 			todo.setId(++idCounter);
 			todos.add(todo);
 			
-		}else {
+		} else {
 			deleteById(todo.getId());
 			todos.add(todo);
 			
